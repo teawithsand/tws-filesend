@@ -29,8 +29,3 @@ This library uses `@teawithsand/tws-async-peer` `EventBus` type from `@teawithsa
 There is nothing wrong in this lib using my own implementation of event bus for handling events, but IMHO it's kind of unsound of me to reinvent the wheel. Just check out the docs for [tws-lts](https://github.com/teawithsand/tws-lts).
 
 Also if you use `react`, check out [tws-lts-react](https://github.com/teawithsand/tws-lts-react), which provides some neat hooks, which make it really easy to hook to busses and especially sticky busses.
-### It's tied to peerjs
-
-But at the beginning it was not supposed to be that way. It's possible to quite easily(like two to three evenings of work) to detach it from peerjs, but I won't do it, because why would I do it.
-
-Main reason I didn't do that was that I do not know where is the boundary between PeerJS and non-peerjs stuff.
