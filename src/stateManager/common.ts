@@ -2,7 +2,7 @@ import { ManagedPeerJS, generateSecureClientId } from "@teawithsand/tws-async-pe
 import { DefaultStickyEventBus, StickySubscribable, generateUUID } from "@teawithsand/tws-lts"
 import { isFileTransferAuthNameValid } from "../defines"
 
-export type FileTransferStateManagerState = {
+export type CommonStateManagerState = {
 	authSecret: string
 	name: string
 }
@@ -12,7 +12,7 @@ export type FileTransferStateManagerState = {
  */
 export class CommonStateManager {
 	private readonly innerStateBus =
-		new DefaultStickyEventBus<FileTransferStateManagerState>({
+		new DefaultStickyEventBus<CommonStateManagerState>({
 			authSecret: generateSecureClientId(),
 			name: generateUUID(),
 		})
@@ -22,7 +22,7 @@ export class CommonStateManager {
 	) {
 	}
 
-	get stateBus(): StickySubscribable<FileTransferStateManagerState> {
+	get stateBus(): StickySubscribable<CommonStateManagerState> {
 		return this.innerStateBus
 	}
 
