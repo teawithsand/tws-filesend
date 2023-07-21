@@ -28,8 +28,6 @@
 <a id="md:a-few-notes-at-the-end" class="tsd-anchor"></a><h2><a href="#md:a-few-notes-at-the-end">A few notes at the end</a></h2><a id="md:it-uses-my-homegrown-event-busses-which-are-so-so-but-work-more-than-ok" class="tsd-anchor"></a><h3><a href="#md:it-uses-my-homegrown-event-busses-which-are-so-so-but-work-more-than-ok">It uses my homegrown event busses, which are so-so but work more than OK</a></h3><p>This library uses <code>@teawithsand/tws-async-peer</code> <code>EventBus</code> type from <code>@teawithsand/ttws-lts</code>, because it was first built on top of <code>tws-stl</code> (part of <code>tws-libs</code>). It&#39;s something like ~100sloc implementation of RxJS, but it&#39;s quite convenient to use nevertheless.</p>
 <p>There is nothing wrong in this lib using my own implementation of event bus for handling events, but IMHO it&#39;s kind of unsound of me to reinvent the wheel. Just check out the docs for <a href="https://github.com/teawithsand/tws-lts">tws-lts</a>.</p>
 <p>Also if you use <code>react</code>, check out <a href="https://github.com/teawithsand/tws-lts-react">tws-lts-react</a>, which provides some neat hooks, which make it really easy to hook to busses and especially sticky busses.</p>
-<a id="md:it39s-tied-to-peerjs" class="tsd-anchor"></a><h3><a href="#md:it39s-tied-to-peerjs">It&#39;s tied to peerjs</a></h3><p>But at the beginning it was not supposed to be that way. It&#39;s possible to quite easily(like two to three evenings of work) to detach it from peerjs, but I won&#39;t do it, because why would I do it.</p>
-<p>Main reason I didn&#39;t do that was that I do not know where is the boundary between PeerJS and non-peerjs stuff.</p>
 </div></div>
 <div class="col-sidebar">
 <div class="page-menu">
@@ -61,8 +59,7 @@
 <li><a href="#md:a-few-notes-at-the-end"><span>A few notes at the end</span></a></li>
 <li>
 <ul>
-<li><a href="#md:it-uses-my-homegrown-event-busses-which-are-so-so-but-work-more-than-ok"><span>It uses my homegrown event busses, which are so-<wbr/>so but work more than OK</span></a></li>
-<li><a href="#md:it39s-tied-to-peerjs"><span>It&#39;s tied to peerjs</span></a></li></ul></li></ul></li></ul></li></ul></div></details></div>
+<li><a href="#md:it-uses-my-homegrown-event-busses-which-are-so-so-but-work-more-than-ok"><span>It uses my homegrown event busses, which are so-<wbr/>so but work more than OK</span></a></li></ul></li></ul></li></ul></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="modules.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)"></path></g></svg><span>@teawithsand/tws-<wbr/>filesend</span></a>
 <ul class="tsd-small-nested-navigation">
@@ -83,11 +80,11 @@
 <li><a href="interfaces/FileTransferEntry.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>File<wbr/>Transfer<wbr/>Entry</span></a></li>
 <li><a href="interfaces/FileTransferEntryHeader.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>File<wbr/>Transfer<wbr/>Entry<wbr/>Header</span></a></li>
 <li><a href="interfaces/FileTransferPeerData.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>File<wbr/>Transfer<wbr/>Peer<wbr/>Data</span></a></li>
-<li><a href="types/FileTransferAuth.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4194304"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-type-alias)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)"></path></g></svg><span>File<wbr/>Transfer<wbr/>Auth</span></a></li>
+<li><a href="types/CommonStateManagerState.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4194304"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-type-alias)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)"></path></g></svg><span>Common<wbr/>State<wbr/>Manager<wbr/>State</span></a></li>
+<li><a href="types/FileTransferAuth.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>File<wbr/>Transfer<wbr/>Auth</span></a></li>
 <li><a href="types/FileTransferAuthResult.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>File<wbr/>Transfer<wbr/>Auth<wbr/>Result</span></a></li>
 <li><a href="types/FileTransferConn.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>File<wbr/>Transfer<wbr/>Conn</span></a></li>
 <li><a href="types/FileTransferHello.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>File<wbr/>Transfer<wbr/>Hello</span></a></li>
-<li><a href="types/FileTransferStateManagerState.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>File<wbr/>Transfer<wbr/>State<wbr/>Manager<wbr/>State</span></a></li>
 <li><a href="types/FileTransferTokenData.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>File<wbr/>Transfer<wbr/>Token<wbr/>Data</span></a></li>
 <li><a href="types/ReceiverAdapterConnConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Receiver<wbr/>Adapter<wbr/>Conn<wbr/>Config</span></a></li>
 <li><a href="types/ReceiverAdapterConnState.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Receiver<wbr/>Adapter<wbr/>Conn<wbr/>State</span></a></li>
