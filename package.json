@@ -34,7 +34,7 @@
 		"dist/**"
 	],
 	"dependencies": {
-		"@teawithsand/tws-async-peer": "^0.0.1",
+		"@teawithsand/tws-async-peer": "^0.0.2",
 		"@teawithsand/tws-lts": "^0.0.2",
 		"immer": "^10.0.2",
 		"peerjs": "^1.4.7"
